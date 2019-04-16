@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Movie from './Movie.js';
 import './App.css';
 
+
 // const movieTitles = [
 //   '생일',
 //   '헬보이',
@@ -28,20 +29,21 @@ const movies = [
 // update : componentWillReceiveProps() -> componentShouldUpdate() -> componentWillUpdate() -> render()
 //                                         return(old props != new props)
 
-class App extends Component {
+class App0 extends Component {
 
   componentWillMount(){
     // request api 호출
     console.log('componentWillMount() called');
   }
 
-  componentDidMount(){
+  componentDidMount(){  
     // after request api
     console.log('componentDidMount() called');
   }
 
   render() {
     return (
+      
       <div className='App'>
         {
           movies.map((movie, index) => 
@@ -53,4 +55,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default App0;

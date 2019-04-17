@@ -1,14 +1,14 @@
 .App {
-  text-align: left;
+    padding:50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-size:14px;
 }
 
-.box{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border: 1px solid black;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.App--loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
